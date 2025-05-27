@@ -1,4 +1,5 @@
 #Take three inputs from a user, separately. Print the largest of the numbers.
+
     #Hint: Determine what type of data is taken in as input.
 num1=input("enter first name")
 num1=int(num1)
@@ -32,8 +33,22 @@ if x>=10 and x<=20 and y>100:
 else:
     print("Conditions not met")
 #4. Write a Python program that checks if a variable password is equal to the string "secret123". If it is, print "Access   granted", otherwise print "Access denied"
-#5. Write a Python program that checks if a variable student_score is greater than 90. If true, check if the attendance is greater than 80. If both conditions are true, print "Excellent student", otherwise print "Good score, but attendance needs improvement"
+password=input("enter password")
 
+if password=="secret123":
+    print("Access granted")
+else:
+    print("Access denied")
+#5. Write a Python program that checks if a variable student_score is greater than 90. If true, check if the attendance is greater than 80. If both conditions are true, print "Excellent student", otherwise print "Good score, but attendance needs improvement"
+student_score=input("enter score")
+student_score=int(student_score)
+attendance=input("enter attendance")
+attendance=int(attendance)
+
+if student_score>90 and attendance>80:
+    print("Excellent student")
+else:
+    print("Good score, but attendance needs improvement")
 
 #Take four inputs from a user , separately. Print the largest of the numbers
 num1=input("enter first number")
