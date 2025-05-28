@@ -3,15 +3,12 @@
 #If start_date is after end_date, print "Invalid period".
 #If both dates are the same, print "One-day period".
 
-start_date=2024-1-1
-start_date=int(start_date)
-end_date=2024-12-31
-end_date=int(end_date)
-date=input("enter date:")
+start_date='2024-01-01'
+end_date='2024-12-31'
 
-if "start_date comes before end_date":
+if start_date<end_date:
     print("Valid period")
-elif "start_date is after end_date":
+elif start_date>end_date:
     print("Invalid period")
 else:
     print("One-day period")
@@ -21,28 +18,26 @@ else:
 #If str2 is longer than str1, print "str2 is longer".
 #If both have equal length, print "Both are of equal length".
 
-strings="str1" and "str2"
-str1=input("enter str1 length:")
-str2=input("enter str2 length:")
+str1=input("len string 1:")
+str2=input("len string 2:")
 
-if "len of str1 is longer than str2":
+if len(str1)>len(str2):
     print("str1 is longer")
-elif "len of str2 is longer than str1":
+elif len(str2)>len(str1):
     print("str2 is longer")
-elif "both have equal length":
-    print("Both are of equal length")
 else:
-    print("Wrong strings")
+    print("Both are of equal length")
+
 
 #3.Given a list valid_ids = [101, 102, 103] and a variable user_id = 105, write a conditional statement that:
 #Prints "Access Granted" if user_id is in valid_ids.
 #Prints "Access Denied" if user_id is not in valid_ids.
 
 valid_ids = [101, 102, 103]
-user_id = 105
+
 user_id=input("enter user id:")
 
-if user_id==valid_ids:
+if user_id in valid_ids:
     print("Access Granted")
 else:
     print("Access Denied")
@@ -53,11 +48,12 @@ else:
 #Prints "Unknown Type" for any other type.
 
 value=2
+print(type(value))
 
-if value==str:
+if type(value)==str:
     print("String Detected")
-elif value==int:
-    print("Integer")
+elif type(value)==int:
+    print("Integer Detected")
 else:
     print("Unknown Type")
 
@@ -69,7 +65,7 @@ else:
 x=7
 y=14
 
-if x%7==0:
+if x%2==0:
     if y%14==0:
         print("x and y are both even")
     else:
