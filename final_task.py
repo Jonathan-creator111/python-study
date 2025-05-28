@@ -22,15 +22,17 @@ else:
 #If both have equal length, print "Both are of equal length".
 
 strings="str1" and "str2"
-strings=input("enter str1 length:")
-strings=input("enter str2 length:")
+str1=input("enter str1 length:")
+str2=input("enter str2 length:")
 
-if "If str1 is longer than str2":
+if "len of str1 is longer than str2":
     print("str1 is longer")
-elif "If str2 is longer than str1":
+elif "len of str2 is longer than str1":
     print("str2 is longer")
-else:
+elif "both have equal length":
     print("Both are of equal length")
+else:
+    print("Wrong strings")
 
 #3.Given a list valid_ids = [101, 102, 103] and a variable user_id = 105, write a conditional statement that:
 #Prints "Access Granted" if user_id is in valid_ids.
@@ -40,7 +42,7 @@ valid_ids = [101, 102, 103]
 user_id = 105
 user_id=input("enter user id:")
 
-if user_id in valid_ids:
+if user_id==valid_ids:
     print("Access Granted")
 else:
     print("Access Denied")
@@ -50,13 +52,12 @@ else:
 #Prints "Integer Detected" if value is an integer.
 #Prints "Unknown Type" for any other type.
 
-x=90
-x=int(x)
+value=2
 
-if "x is a string":
+if value==str:
     print("String Detected")
-elif "x is an integer":
-    print("Integer Detected")
+elif value==int:
+    print("Integer")
 else:
     print("Unknown Type")
 
@@ -68,9 +69,10 @@ else:
 x=7
 y=14
 
-if "both x and y are even numbers":
-    print("x and y are both even")
-elif "if only y is even":
-    print("Only y is even")
+if x%7==0:
+    if y%14==0:
+        print("x and y are both even")
+    else:
+        print("Only y is even")
 else:
     print("Neither x nor y are even")
