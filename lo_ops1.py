@@ -48,3 +48,25 @@ for i in luck:
         odd.append(i)
 
 print(odd)
+
+#store the first 10 even numbers from 1 to 100
+even=[]
+numb=list(range(1,101))
+for i in numb:
+    if i%2==0:
+        even.append(i)
+        if len(even)==10:
+            break
+
+print(even)
+
+#store the first 10 odd numbers from 1 to 100
+odd=[]
+turk=list(range(1,101))
+for i in turk:
+    if i%2!=0:
+        odd.append(i)
+        if len(odd)==10:
+            break
+
+print(odd)
