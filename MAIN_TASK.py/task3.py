@@ -9,5 +9,3 @@ phonenumber=int(phonenumber)
 
 if phonenumber[0]=="+254 or 07 or 7 or 254 or 01 or 1":
     print("phonenumber")
-else:
-    print("invalid phonenumber")
