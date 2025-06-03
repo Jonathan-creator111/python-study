@@ -4,8 +4,22 @@
 #e.g if a user enters “0112345678”, the program should display “+254112345678”
 #e.g if a user enters “712345678”, the program should display “+254712345678”
 #Once you learn functions,revisit this and write this code inside a function.
-phonenumber=input("enter phonenumber: ")
-phonenumber=int(phonenumber)
 
-if phonenumber[0]=="+254 or 07 or 7 or 254 or 01 or 1":
-    print("phonenumber")
+phone_number=input("enter phone_number: ")
+
+if phone_number.startswith("+254") and len(phone_number)==13:
+    valid=phone_number
+elif phone_number.startswith("07") and len(phone_number)==10:
+    valid="+254"+phone_number[1:]
+elif phone_number.startswith("7") and len(phone_number)==9:
+    valid="+254"+phone_number
+elif phone_number.startswith("+254") and len(phone_number)==12:
+    valid="+"+phone_number
+elif phone_number.startswith("01") and len(phone_number)==10:
+    valid="+254"+phone_number[1:]
+elif phone_number.startswith("1") and len(phone_number)==9:
+    valid="+254"+phone_number
+else:
+    print("Invalid phone_number")
+
+print(f"{valid} is a valid phone number")
