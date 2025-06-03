@@ -2,10 +2,12 @@
 #Write a program which accepts email as form input or from terminal. Validate the email by checking if it's a valid email. 
 #Hint: Check if it contains an “@” symbol and “.” symbol.
 #Once you learn functions,revisit this and write this code inside a function.
-email=input("enter email: ")
-email=str(email)
 
-if email==email+"@"+".":
-    print("email is valid")
+email=input("enter email: ")
+
+if email.find("@")==-1 and email.find(".")==-1:
+    print("email is Invalid")
 else:
-    print("email is invalid")
+    print("email is valid")
+
+# Regex
