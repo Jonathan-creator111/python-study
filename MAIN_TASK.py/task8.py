@@ -9,7 +9,7 @@ speed_limit=70
 if speed<speed_limit:
     results="Ok"
 else:
-    demerit_points=round(speed-speed_limit)/5
+    demerit_points=round((speed-speed_limit)/5)
     if demerit_points>12:
         results="Lincense suspended"
     else:
