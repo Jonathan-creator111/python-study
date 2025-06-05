@@ -27,18 +27,15 @@ rectangle_area()
 
 #create a function that displays the largest number among 3 numbers
 def largest_number():
-    num1=input("enter first number:")
-    num1=int(num1)
-    num2=input("enter second number:")
-    num2=int(num2)
-    num3=input("enter third number:")
-    num3=int(num3)
-
+    num1=30
+    num2=50
+    num3=20
     if num1>num2 and num1>num3:
-        print(f"{num1} is the largest number")
+        results=num1
     elif num2>num1 and num2>num3:
-        print(f"{num2} is the largest number")
+        results=num2
     else:
-        print(f"{num3} is the largest number")
+        results=num3
+    print(f"the largest number is {results}")
 
 largest_number()
