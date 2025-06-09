@@ -1,5 +1,8 @@
+#TASK 15: Using Python or PHP or Java or Ruby or JavaScript
+#Write a program that takes input of someone's basic salary and benefits, adds them to find the gross salary then uses  the gross salary to find the NHIF. 
+#To find the Kenya NHIF Rate using THIS LINK:  
+#Write a normal program but use functions if you feel comfortable.
 
-# first step is , a function to calculate the gross salary
 def calculate_gross_salary(basic_salary,benefits):
     gross_salary=basic_salary+benefits
     return gross_salary
@@ -10,8 +13,6 @@ benefits=float(input("enter benefits:"))
 grossSalary=calculate_gross_salary(basic_salary,benefits)
 
 print(grossSalary)
-
-# function to calculate NHIF
 
 def calculate_nhif(gross):
     if gross<=5999:
